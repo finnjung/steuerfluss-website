@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ThemeToggle } from './ThemeToggle'
+import { Logo } from './Logo'
 
 const navItems = [
   { name: 'Features', href: '/#features' },
@@ -24,11 +25,9 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="flex items-center gap-2"
+              className="flex items-center gap-1"
             >
-              <div className="w-8 h-8 bg-[var(--primary)] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
+              <Logo size={48} />
               <span className="text-xl font-semibold text-[var(--foreground)]">
                 SteuerFluss
               </span>

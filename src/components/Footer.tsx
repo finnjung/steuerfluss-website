@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Logo } from './Logo'
 
 const footerLinks = {
   produkt: [
@@ -25,10 +26,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-[var(--primary)] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">S</span>
-              </div>
+            <Link href="/" className="flex items-center gap-1 mb-4">
+              <Logo size={48} />
               <span className="text-xl font-semibold text-[var(--foreground)]">
                 SteuerFluss
               </span>
