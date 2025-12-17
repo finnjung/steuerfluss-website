@@ -8,8 +8,9 @@ import { ThemeToggle } from './ThemeToggle'
 const navItems = [
   { name: 'Features', href: '/#features' },
   { name: 'Preise', href: '/#pricing' },
+  { name: 'FAQ', href: '/faq' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Kontakt', href: '/#contact' },
+  { name: 'Kontakt', href: '/kontakt' },
 ]
 
 export function Header() {
@@ -51,7 +52,7 @@ export function Header() {
           <div className="hidden md:flex items-center gap-4">
             <ThemeToggle />
             <motion.a
-              href="https://app.steuerfluss.de"
+              href="https://app.steuer-fluss.de"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="px-5 py-2.5 bg-[var(--primary)] text-white rounded-lg font-medium hover:bg-[var(--primary-hover)] transition-colors"
@@ -123,7 +124,7 @@ export function Header() {
                   </Link>
                 ))}
                 <a
-                  href="https://app.steuerfluss.de"
+                  href="https://app.steuer-fluss.de"
                   className="block w-full text-center px-5 py-2.5 bg-[var(--primary)] text-white rounded-lg font-medium hover:bg-[var(--primary-hover)] transition-colors"
                 >
                   Kostenlos starten

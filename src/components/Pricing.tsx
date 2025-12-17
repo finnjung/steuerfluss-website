@@ -89,7 +89,7 @@ export function Pricing() {
 
             {/* CTA */}
             <motion.a
-              href="https://app.steuerfluss.de"
+              href="https://app.steuer-fluss.de"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="block w-full text-center px-8 py-4 bg-[var(--primary)] text-white rounded-xl font-semibold text-lg hover:bg-[var(--primary-hover)] transition-colors"

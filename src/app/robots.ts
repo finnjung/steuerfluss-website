@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://steuerfluss.de/sitemap.xml',
+    sitemap: 'https://steuer-fluss.de/sitemap.xml',
   }
 }

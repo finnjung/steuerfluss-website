@@ -2,40 +2,12 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, ArrowRight } from 'lucide-react'
+import Link from 'next/link'
+import { faqs } from '@/data/faqs'
 
-const faqs = [
-  {
-    question: 'Ist SteuerFluss wirklich kostenlos?',
-    answer:
-      'Ja! SteuerFluss ist aktuell 100% kostenlos. Als Frühbucher bekommst du alle Funktionen ohne Einschränkungen. Wir finanzieren uns durch optionale Premium-Features, die in Zukunft kommen werden.',
-  },
-  {
-    question: 'Für wen ist SteuerFluss geeignet?',
-    answer:
-      'SteuerFluss ist ideal für Selbstständige, Freelancer und kleine Unternehmen. Ob du Rechnungen schreiben, Belege erfassen oder deine Finanzen im Blick behalten willst - SteuerFluss ist für dich.',
-  },
-  {
-    question: 'Kann ich meine Daten exportieren?',
-    answer:
-      'Selbstverständlich! Du kannst deine Daten jederzeit im DATEV-Format exportieren. Das ist perfekt für die Zusammenarbeit mit deinem Steuerberater.',
-  },
-  {
-    question: 'Wie sicher sind meine Daten?',
-    answer:
-      'Sehr sicher! Alle Daten werden verschlüsselt in deutschen Rechenzentren gespeichert. Wir sind vollständig DSGVO-konform und nehmen Datenschutz sehr ernst.',
-  },
-  {
-    question: 'Gibt es eine mobile App?',
-    answer:
-      'SteuerFluss ist als Web-App vollständig mobil nutzbar. Eine native App für iOS und Android ist in Planung.',
-  },
-  {
-    question: 'Wie kann ich den Support erreichen?',
-    answer:
-      'Du erreichst uns per E-Mail. Wir antworten in der Regel innerhalb von 24 Stunden auf deine Anfragen.',
-  },
-]
+// Nur die ersten 6 FAQs auf der Startseite anzeigen
+const displayedFaqs = faqs.slice(0, 6)
 
 export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
@@ -61,7 +33,7 @@ export function FAQ() {
 
         {/* FAQ Items */}
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
+          {displayedFaqs.map((faq, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -102,6 +74,23 @@ export function FAQ() {
             </motion.div>
           ))}
         </div>
+
+        {/* Alle Fragen Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-10 text-center"
+        >
+          <Link
+            href="/faq"
+            className="inline-flex items-center gap-2 px-6 py-3 text-[var(--primary)] font-medium hover:bg-[var(--primary)]/10 rounded-lg transition-colors"
+          >
+            Alle Fragen ansehen
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   )

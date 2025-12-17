@@ -64,7 +64,7 @@ export default function DatenschutzPage() {
             [Dein Name / Firmenname]<br />
             [Strasse Hausnummer]<br />
             [PLZ Ort]<br /><br />
-            E-Mail: kontakt@steuerfluss.de
+            E-Mail: info@steuer-fluss.de
           </p>
 
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mt-8 mb-4">

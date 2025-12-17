@@ -13,7 +13,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://steuerfluss.de'),
+  metadataBase: new URL('https://steuer-fluss.de'),
   title: {
     default: 'SteuerFluss - Moderne Buchhaltungssoftware | Kostenlos',
     template: '%s | SteuerFluss',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'de_DE',
-    url: 'https://steuerfluss.de',
+    url: 'https://steuer-fluss.de',
     siteName: 'SteuerFluss',
     title: 'SteuerFluss - Moderne Buchhaltungssoftware | Kostenlos',
     description:

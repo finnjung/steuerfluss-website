@@ -26,7 +26,7 @@ export function CTA() {
               Starte jetzt kostenlos mit SteuerFluss und bringe deine Buchhaltung auf das nächste Level.
             </p>
             <motion.a
-              href="https://app.steuerfluss.de"
+              href="https://app.steuer-fluss.de"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[var(--primary)] rounded-xl font-semibold text-lg hover:bg-white/90 transition-colors group"

@@ -4,12 +4,12 @@ const footerLinks = {
   produkt: [
     { name: 'Features', href: '/#features' },
     { name: 'Preise', href: '/#pricing' },
-    { name: 'FAQ', href: '/#faq' },
+    { name: 'FAQ', href: '/faq' },
   ],
   ressourcen: [
     { name: 'Blog', href: '/blog' },
+    { name: 'Kontakt', href: '/kontakt' },
     { name: 'Hilfe', href: '/hilfe' },
-    { name: 'Dokumentation', href: '/docs' },
   ],
   rechtliches: [
     { name: 'Impressum', href: '/impressum' },

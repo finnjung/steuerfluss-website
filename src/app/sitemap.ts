@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://steuerfluss.de'
+  const baseUrl = 'https://steuer-fluss.de'
 
   const posts = getAllPosts()
   const blogPosts = posts.map((post) => ({

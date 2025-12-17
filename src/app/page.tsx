@@ -3,6 +3,7 @@ import { Features } from '@/components/Features'
 import { Pricing } from '@/components/Pricing'
 import { Testimonials } from '@/components/Testimonials'
 import { FAQ } from '@/components/FAQ'
+import { Contact } from '@/components/Contact'
 import { CTA } from '@/components/CTA'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <FAQ />
+      <Contact />
       <CTA />
     </>
   )

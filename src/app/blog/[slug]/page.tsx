@@ -143,7 +143,7 @@ export default async function BlogPostPage({ params }: Props) {
               Starte jetzt kostenlos mit SteuerFluss und spare Zeit bei deiner Buchhaltung.
             </p>
             <a
-              href="https://app.steuerfluss.de"
+              href="https://app.steuer-fluss.de"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--primary)] text-white rounded-lg font-medium hover:bg-[var(--primary-hover)] transition-colors"
             >
               Kostenlos starten
