@@ -81,10 +81,10 @@ export default function KontaktPage() {
               </div>
               <h3 className="font-semibold text-[var(--foreground)] mb-2">Telefon</h3>
               <a
-                href="tel:+4969123456789"
+                href="tel:+491607703496"
                 className="text-[var(--foreground-muted)] hover:text-[var(--primary)] transition-colors"
               >
-                +49 69 123 456 789
+                +49 160 7703496
               </a>
             </div>
 
@@ -106,11 +106,11 @@ export default function KontaktPage() {
               </div>
               <h3 className="font-semibold text-[var(--foreground)] mb-2">Adresse</h3>
               <p className="text-[var(--foreground-muted)]">
-                SteuerFluss GmbH
+                Finn Jung
                 <br />
-                Musterstraße 123
+                Rotlintstraße 79
                 <br />
-                60311 Frankfurt am Main
+                60389 Frankfurt am Main
               </p>
             </div>
 

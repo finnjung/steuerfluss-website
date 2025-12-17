@@ -18,9 +18,10 @@ export default function ImpressumPage() {
             Angaben gemäß § 5 TMG
           </h2>
           <p>
-            [Dein Name / Firmenname]<br />
-            [Strasse Hausnummer]<br />
-            [PLZ Ort]<br />
+            Finn Jung<br />
+            Einzelunternehmen<br />
+            Rotlintstraße 79<br />
+            60389 Frankfurt am Main<br />
             Deutschland
           </p>
 
@@ -28,7 +29,15 @@ export default function ImpressumPage() {
             Kontakt
           </h2>
           <p>
+            Telefon: +49 160 7703496<br />
             E-Mail: info@steuer-fluss.de
+          </p>
+
+          <h2 className="text-2xl font-semibold text-[var(--foreground)] mt-8 mb-4">
+            Steuernummer
+          </h2>
+          <p>
+            014 832 61025
           </p>
 
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mt-8 mb-4">
@@ -36,16 +45,16 @@ export default function ImpressumPage() {
           </h2>
           <p>
             Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br />
-            [Deine USt-IdNr.]
+            DE340699431
           </p>
 
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mt-8 mb-4">
             Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
           </h2>
           <p>
-            [Dein Name]<br />
-            [Strasse Hausnummer]<br />
-            [PLZ Ort]
+            Finn Jung<br />
+            Rotlintstraße 79<br />
+            60389 Frankfurt am Main
           </p>
 
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mt-8 mb-4">

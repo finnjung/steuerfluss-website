@@ -27,8 +27,8 @@ export function Header() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-1"
             >
-              <Logo size={48} />
-              <span className="text-xl font-semibold text-[var(--foreground)]">
+              <Logo size={36} />
+              <span className="hidden sm:inline text-xl font-semibold text-[var(--foreground)]">
                 SteuerFluss
               </span>
             </motion.div>

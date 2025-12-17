@@ -40,7 +40,8 @@ export default function DatenschutzPage() {
             2. Hosting
           </h2>
           <p>
-            Wir hosten die Inhalte unserer Website bei folgendem Anbieter: [Anbieter einfügen]
+            Die Inhalte dieser Website werden extern gehostet. Details zum Hosting-Anbieter
+            werden bei Bedarf hier ergänzt. Bei Fragen wenden Sie sich bitte an info@steuer-fluss.de.
           </p>
 
           <h2 className="text-2xl font-semibold text-[var(--foreground)] mt-8 mb-4">
@@ -61,9 +62,11 @@ export default function DatenschutzPage() {
           </h3>
           <p>
             Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br /><br />
-            [Dein Name / Firmenname]<br />
-            [Strasse Hausnummer]<br />
-            [PLZ Ort]<br /><br />
+            Finn Jung<br />
+            Einzelunternehmen<br />
+            Rotlintstraße 79<br />
+            60389 Frankfurt am Main<br /><br />
+            Telefon: +49 160 7703496<br />
             E-Mail: info@steuer-fluss.de
           </p>
 
