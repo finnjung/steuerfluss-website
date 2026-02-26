@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, MessageSquare, MapPin, Clock, Phone } from 'lucide-react'
+import { Mail, MessageSquare, Clock, Phone } from 'lucide-react'
 import { Turnstile } from '@/components/Turnstile'
 
 export default function KontaktPage() {
@@ -96,21 +96,6 @@ export default function KontaktPage() {
               <h3 className="font-semibold text-[var(--foreground)] mb-2">Live-Chat</h3>
               <p className="text-[var(--foreground-muted)]">
                 Verfügbar Mo-Fr, 9:00 - 18:00 Uhr
-              </p>
-            </div>
-
-            {/* Office */}
-            <div className="p-6 bg-[var(--background-secondary)] rounded-xl border border-[var(--border)]">
-              <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
-                <MapPin className="w-6 h-6 text-[var(--primary)]" />
-              </div>
-              <h3 className="font-semibold text-[var(--foreground)] mb-2">Adresse</h3>
-              <p className="text-[var(--foreground-muted)]">
-                Finn Jung
-                <br />
-                Rotlintstraße 79
-                <br />
-                60389 Frankfurt am Main
               </p>
             </div>
 
