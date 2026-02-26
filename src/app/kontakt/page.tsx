@@ -52,62 +52,74 @@ export default function KontaktPage() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contact Info Cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-stretch">
+          {/* Contact Info Card */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="lg:col-span-1 space-y-6"
+            className="lg:col-span-1"
           >
-            {/* Email */}
-            <div className="p-6 bg-[var(--background-secondary)] rounded-xl border border-[var(--border)]">
-              <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6 text-[var(--primary)]" />
-              </div>
-              <h3 className="font-semibold text-[var(--foreground)] mb-2">E-Mail</h3>
-              <a
-                href="mailto:info@steuer-fluss.de"
-                className="text-[var(--foreground-muted)] hover:text-[var(--primary)] transition-colors"
-              >
-                info@steuer-fluss.de
-              </a>
-            </div>
+            <div className="h-full p-8 bg-[var(--background-secondary)] rounded-2xl border border-[var(--border)] flex flex-col justify-between">
+              <div className="space-y-8">
+                {/* Email */}
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 text-[var(--primary)]" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[var(--foreground)] mb-1">E-Mail</h3>
+                    <a
+                      href="mailto:info@steuer-fluss.de"
+                      className="text-[var(--foreground-muted)] hover:text-[var(--primary)] transition-colors"
+                    >
+                      info@steuer-fluss.de
+                    </a>
+                  </div>
+                </div>
 
-            {/* Phone */}
-            <div className="p-6 bg-[var(--background-secondary)] rounded-xl border border-[var(--border)]">
-              <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
-                <Phone className="w-6 h-6 text-[var(--primary)]" />
-              </div>
-              <h3 className="font-semibold text-[var(--foreground)] mb-2">Telefon</h3>
-              <a
-                href="tel:+491607703496"
-                className="text-[var(--foreground-muted)] hover:text-[var(--primary)] transition-colors"
-              >
-                +49 160 7703496
-              </a>
-            </div>
+                {/* Phone */}
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-[var(--primary)]" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[var(--foreground)] mb-1">Telefon</h3>
+                    <a
+                      href="tel:+491607703496"
+                      className="text-[var(--foreground-muted)] hover:text-[var(--primary)] transition-colors"
+                    >
+                      +49 160 7703496
+                    </a>
+                  </div>
+                </div>
 
-            {/* Live Chat */}
-            <div className="p-6 bg-[var(--background-secondary)] rounded-xl border border-[var(--border)]">
-              <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
-                <MessageSquare className="w-6 h-6 text-[var(--primary)]" />
-              </div>
-              <h3 className="font-semibold text-[var(--foreground)] mb-2">Live-Chat</h3>
-              <p className="text-[var(--foreground-muted)]">
-                Verfügbar Mo-Fr, 9:00 - 18:00 Uhr
-              </p>
-            </div>
+                {/* Live Chat */}
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MessageSquare className="w-5 h-5 text-[var(--primary)]" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[var(--foreground)] mb-1">Live-Chat</h3>
+                    <p className="text-[var(--foreground-muted)]">
+                      Verfügbar Mo-Fr, 9:00 - 18:00 Uhr
+                    </p>
+                  </div>
+                </div>
 
-            {/* Support Hours */}
-            <div className="p-6 bg-[var(--background-secondary)] rounded-xl border border-[var(--border)]">
-              <div className="w-12 h-12 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center mb-4">
-                <Clock className="w-6 h-6 text-[var(--primary)]" />
-              </div>
-              <h3 className="font-semibold text-[var(--foreground)] mb-2">Support-Zeiten</h3>
-              <div className="text-[var(--foreground-muted)] space-y-1">
-                <p>Mo-Fr: 9:00 - 18:00 Uhr</p>
-                <p>Sa-So: Geschlossen</p>
+                {/* Support Hours */}
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-5 h-5 text-[var(--primary)]" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-[var(--foreground)] mb-1">Support-Zeiten</h3>
+                    <div className="text-[var(--foreground-muted)] space-y-1">
+                      <p>Mo-Fr: 9:00 - 18:00 Uhr</p>
+                      <p>Sa-So: Geschlossen</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -119,7 +131,7 @@ export default function KontaktPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="lg:col-span-2"
           >
-            <div className="bg-[var(--background-secondary)] p-8 sm:p-10 rounded-2xl border border-[var(--border)]">
+            <div className="h-full bg-[var(--background-secondary)] p-8 sm:p-10 rounded-2xl border border-[var(--border)]">
               <h2 className="text-2xl font-bold text-[var(--foreground)] mb-6">
                 Schreib uns eine Nachricht
               </h2>
