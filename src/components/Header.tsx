@@ -33,8 +33,8 @@ export function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-[var(--background)]/80 backdrop-blur-md border-b border-[var(--border)]'
+        isScrolled || isOpen
+          ? 'bg-[var(--background)]/95 backdrop-blur-md border-b border-[var(--border)]'
           : 'bg-transparent border-b border-transparent'
       }`}
     >
@@ -136,7 +136,7 @@ export function Header() {
                     key={item.name}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="block text-[var(--foreground-muted)] hover:text-[var(--primary)] transition-colors font-medium"
+                    className="block text-center text-[var(--foreground-muted)] hover:text-[var(--primary)] transition-colors font-medium"
                   >
                     {item.name}
                   </Link>
