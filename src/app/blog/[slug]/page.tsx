@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
             <Tag className="w-3 h-3" />
             {post.category}
           </span>
-          <h1 className="text-3xl sm:text-4xl font-bold text-[var(--foreground)] mb-4">
+          <h1 className="text-xl sm:text-3xl font-bold text-[var(--foreground)] mb-4">
             {post.title}
           </h1>
           <p className="text-lg text-[var(--foreground-muted)] mb-6">
