@@ -73,6 +73,26 @@ const components = {
   pre: (props: React.HTMLAttributes<HTMLPreElement>) => (
     <pre className="bg-[var(--background-secondary)] p-4 rounded-lg overflow-x-auto mb-4" {...props} />
   ),
+  table: (props: React.HTMLAttributes<HTMLTableElement>) => (
+    <div className="overflow-x-auto mb-6 rounded-lg border border-[var(--border)]">
+      <table className="w-full text-sm text-left" {...props} />
+    </div>
+  ),
+  thead: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
+    <thead className="bg-[var(--background-secondary)] text-[var(--foreground)] font-semibold" {...props} />
+  ),
+  tbody: (props: React.HTMLAttributes<HTMLTableSectionElement>) => (
+    <tbody className="divide-y divide-[var(--border)]" {...props} />
+  ),
+  tr: (props: React.HTMLAttributes<HTMLTableRowElement>) => (
+    <tr className="hover:bg-[var(--background-secondary)] transition-colors" {...props} />
+  ),
+  th: (props: React.ThHTMLAttributes<HTMLTableCellElement>) => (
+    <th className="px-4 py-3 text-[var(--foreground)]" {...props} />
+  ),
+  td: (props: React.TdHTMLAttributes<HTMLTableCellElement>) => (
+    <td className="px-4 py-3 text-[var(--foreground-muted)]" {...props} />
+  ),
 }
 
 export default async function BlogPostPage({ params }: Props) {
