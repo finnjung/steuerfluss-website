@@ -30,6 +30,29 @@ Die Berechnung folgt einer festen Formel – aber sie ist aufgeteilt in mehrere 
 
 Das klingt kompliziert. Hier die einzelnen Komponenten:
 
+<svg viewBox="0 0 640 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gewerbesteuer Kennzahlen: 24.500 Euro Freibetrag, 3,5 Prozent Steuermesszahl, 200 bis 600 Prozent Hebesatz" style="max-width:640px;width:100%;height:auto;margin:1.5em 0">
+  <style>
+    .stat-num { font: 700 24px -apple-system, system-ui, sans-serif; fill: #4D719A; }
+    .stat-label { font: 13px -apple-system, system-ui, sans-serif; fill: #6b7280; }
+    .stat-sublabel { font: 11px -apple-system, system-ui, sans-serif; fill: #9ca3af; }
+  </style>
+  <!-- Karte 1: Freibetrag -->
+  <rect x="0" y="0" width="200" height="100" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="100" y="38" text-anchor="middle" class="stat-num">24.500 €</text>
+  <text x="100" y="60" text-anchor="middle" class="stat-label">Freibetrag</text>
+  <text x="100" y="78" text-anchor="middle" class="stat-sublabel">§ 11 Abs. 1 GewStG</text>
+  <!-- Karte 2: Steuermesszahl -->
+  <rect x="215" y="0" width="200" height="100" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="315" y="38" text-anchor="middle" class="stat-num">3,5 %</text>
+  <text x="315" y="60" text-anchor="middle" class="stat-label">Steuermesszahl</text>
+  <text x="315" y="78" text-anchor="middle" class="stat-sublabel">§ 11 Abs. 2 GewStG</text>
+  <!-- Karte 3: Hebesatz -->
+  <rect x="430" y="0" width="200" height="100" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="530" y="38" text-anchor="middle" class="stat-num">200–600 %</text>
+  <text x="530" y="60" text-anchor="middle" class="stat-label">Hebesatz</text>
+  <text x="530" y="78" text-anchor="middle" class="stat-sublabel">§ 16 Abs. 4 GewStG</text>
+</svg>
+
 ### Schritt 1: Gewerbeertrag ermitteln
 
 Der Gewerbeertrag ist – vereinfacht – dein Gewinn aus dem Gewerbebetrieb. Das Finanzamt berechnet ihn aus deiner Steuererklärung (oder Bilanz).
@@ -58,7 +81,7 @@ Aus unserem Beispiel: 10.500 Euro × 3,5% = 367,50 Euro Steuermessbetrag.
 
 Hier kommt ein großer Wildcard ins Spiel: der **Hebesatz deiner Gemeinde**.
 
-Jede Stadt und Gemeinde legt ihren eigenen Hebesatz fest – das ist ein Multiplikator zwischen 200% und 600% (im Durchschnitt 400–450%).
+Jede Stadt und Gemeinde legt ihren eigenen Hebesatz fest – das ist ein Multiplikator, der gesetzlich mindestens [200 % nach § 16 Abs. 4 GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html) betragen muss. Nach oben gibt es keine gesetzliche Grenze; in der Praxis liegt der Hebesatz meist zwischen 200 % und 600 % (im Durchschnitt 400–450 %). Einige Gemeinden erheben jedoch deutlich höhere Sätze.
 
 **Der Hebesatz = Gewerbesteuer (vor Anrechnung).**
 
@@ -92,15 +115,13 @@ Das bedeutet: Die Gewerbesteuer „drückt" deine Einkommensteuer. Je höher die
 
 ## Wann muss man Gewerbesteuer zahlen?
 
-Die Gewerbesteuer wird **jährlich** fällig. Die Fälligkeit ist am **15. Mai des Jahres nach dem Veranlagungszeitraum**.
+Die Gewerbesteuer wird in **quartalsweisen Vorauszahlungen** fällig – und zwar jeweils am **15. Februar, 15. Mai, 15. August und 15. November** des laufenden Jahres ([§ 19 GewStG](https://www.gesetze-im-internet.de/gewstg/__19.html)). Die Höhe richtet sich nach der letzten Veranlagung, kann aber von der Gemeinde angepasst werden.
 
-Wenn dein Gewinn 2025 über 24.500 Euro lag, zahlst du die Gewerbesteuer 2026 (Fälligkeit: 15. Mai 2026).
+Wenn dein Gewinn 2025 über 24.500 Euro lag, zahlst du 2026 die vierteljährlichen Vorauszahlungen. Nach Abgabe deiner Steuererklärung ergeht der endgültige [Steuermessbescheid vom Finanzamt](https://www.gesetze-im-internet.de/gewstg/__14.html) – die Gemeinde schickt dir daraufhin den finalen Gewerbesteuerbescheid. Je nach Differenz zu den Vorauszahlungen kommt es dann zu einer Nachzahlung oder Erstattung.
 
-Wichtig: Das Finanzamt schickt dir einen [Steuermessbescheid](https://www.bzst.de) – dort siehst du die festgesetzte Gewerbesteuer. Die Gemeinde schickt dir dann die Rechnung.
+> **Merksatz:** Gewerbesteuer wird quartalsweise per Vorauszahlung fällig (15. Feb, Mai, Aug, Nov). Endabrechnung nach Steuererklärung.
 
-> **Merksatz:** Gewerbesteuer ist jährlich fällig (für das Vorjahr). Frist: 15. Mai.
-
-## Tipps zur Planung
+## Gewerbesteuer clever planen: 5 Tipps
 
 1. **Freibetrag ausnutzen:** Wenn dein Gewinn knapp über 24.500 Euro liegt, prüf, ob du Betriebsausgaben optimieren kannst (z.B. Investitionen, Weiterbildung). Der Freibetrag spart schnell Steuern.
 
@@ -120,11 +141,11 @@ Nein. Freiberufler nach § 18 EStG (Ärzte, Rechtsanwälte, Steuerberater, Ingen
 
 **F: Gewerbesteuer ab welchem Gewinn?**
 
-Ab 24.501 Euro Gewinn im Jahr. Bis 24.500 Euro zahlt man nichts, wegen des Freibetrags nach § 11 GewStG.
+Ab 24.501 Euro Gewinn im Jahr. Bis 24.500 Euro zahlt man nichts, wegen des Freibetrags nach [§ 11 Abs. 1 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html).
 
 **F: Kann ich Gewerbesteuer absetzen?**
 
-Nein, aber es gibt eine Anrechnung nach § 35 EStG: Deine Einkommensteuer sinkt um das 4-fache des Gewerbesteuermessbetrags (maximal aber die tatsächlich gezahlte Gewerbesteuer). Das ist indirekt ein Steuervorteil.
+Nein, aber es gibt eine Anrechnung nach [§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html): Deine Einkommensteuer sinkt um das 4-fache des Gewerbesteuermessbetrags (maximal aber die tatsächlich gezahlte Gewerbesteuer). Das ist indirekt ein Steuervorteil.
 
 **F: Wie hoch ist die durchschnittliche Gewerbesteuer?**
 
@@ -132,11 +153,11 @@ Das hängt stark von deinem Hebesatz ab. Mit 400–450% Hebesatz (Durchschnitt) 
 
 **F: Was ist der Hebesatz?**
 
-Der Multiplikator, den deine Gemeinde festlegt. Er liegt zwischen 200% und 600%. Deine Gemeinde hat ihn auf ihrer Website oder du fragst das Rathaus.
+Der Multiplikator, den deine Gemeinde festlegt. Er muss mindestens 200 % betragen ([§ 16 Abs. 4 GewStG](https://www.gesetze-im-internet.de/gewstg/__16.html)), in der Praxis liegt er meist zwischen 200 % und 600 %. Deine Gemeinde hat ihn auf ihrer Website oder du fragst das Rathaus.
 
 **F: Wird Gewerbesteuer auf die Einkommensteuer angerechnet?**
 
-Ja, nach § 35 EStG automatisch. Du musst nichts tun – dein Steuerberater oder die Steuererklärung berücksichtigt das.
+Ja, nach [§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html) automatisch. Du musst nichts tun – dein Steuerberater oder die Steuererklärung berücksichtigt das.
 
 ---
 
