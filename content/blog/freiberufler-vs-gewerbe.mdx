@@ -53,48 +53,42 @@ Viele Selbstständige fallen nicht eindeutig unter einen Katalogberuf. Besonders
 
 ## Vergleich auf einen Blick
 
-<svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vergleich Freiberufler vs. Gewerbetreibender: Gewerbesteuer, Anmeldung, Buchführung, IHK-Mitgliedschaft" style="max-width:560px;width:100%;height:auto;margin:1.5em 0">
-  <style>
-    .th { font: 600 13px -apple-system, system-ui, sans-serif; fill: #171717; }
-    .td { font: 13px -apple-system, system-ui, sans-serif; fill: #374151; }
-    .yes { font: 600 13px -apple-system, system-ui, sans-serif; fill: #059669; }
-    .no { font: 600 13px -apple-system, system-ui, sans-serif; fill: #dc2626; }
-    .neutral { font: 13px -apple-system, system-ui, sans-serif; fill: #374151; }
-  </style>
-  <!-- Header -->
+<svg viewBox="0 0 560 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vergleich Freiberufler vs. Gewerbetreibender: Gewerbesteuer, Anmeldung, Buchführung, IHK-Mitgliedschaft" style={{maxWidth:'560px',width:'100%',height:'auto',margin:'1.5em 0'}}>
+
+  {/* Header */}
   <rect x="0" y="0" width="560" height="30" rx="4" fill="#4D719A"/>
-  <text x="10" y="20" class="th" fill="#ffffff">Merkmal</text>
-  <text x="310" y="20" class="th" fill="#ffffff">Freiberufler</text>
-  <text x="450" y="20" class="th" fill="#ffffff">Gewerbe</text>
-  <!-- Zeile 1 -->
+  <text x="10" y="20" font-weight="600" font-size="13px" font-family="-apple-system, system-ui, sans-serif" fill="#171717" fill="#ffffff">Merkmal</text>
+  <text x="310" y="20" font-weight="600" font-size="13px" font-family="-apple-system, system-ui, sans-serif" fill="#171717" fill="#ffffff">Freiberufler</text>
+  <text x="450" y="20" font-weight="600" font-size="13px" font-family="-apple-system, system-ui, sans-serif" fill="#171717" fill="#ffffff">Gewerbe</text>
+  {/* Zeile 1 */}
   <rect x="0" y="30" width="560" height="38" fill="#f9fafb"/>
   <line x1="0" y1="68" x2="560" y2="68" stroke="#e5e7eb"/>
-  <text x="10" y="53" class="td">Gewerbesteuer</text>
-  <text x="330" y="53" class="yes">✓ keine</text>
-  <text x="460" y="53" class="no">✗ ab 24.500 €</text>
-  <!-- Zeile 2 -->
+  <text x="10" y="53" font-size="13px" font-family="-apple-system," fill="#374151">Gewerbesteuer</text>
+  <text x="330" y="53" font-weight="600" font-size="13px" font-family="-apple-system, system-ui, sans-serif" fill="#059669">✓ keine</text>
+  <text x="460" y="53" font-weight="600" font-size="13px" font-family="-apple-system, system-ui, sans-serif" fill="#dc2626">✗ ab 24.500 €</text>
+  {/* Zeile 2 */}
   <rect x="0" y="68" width="560" height="38" fill="#ffffff"/>
   <line x1="0" y1="106" x2="560" y2="106" stroke="#e5e7eb"/>
-  <text x="10" y="91" class="td">Anmeldung</text>
-  <text x="310" y="91" class="neutral">Finanzamt</text>
-  <text x="450" y="91" class="neutral">Gewerbeamt + FA</text>
-  <!-- Zeile 3 -->
+  <text x="10" y="91" font-size="13px" font-family="-apple-system," fill="#374151">Anmeldung</text>
+  <text x="310" y="91" font-size="13px" font-family="-apple-system," fill="#374151">Finanzamt</text>
+  <text x="450" y="91" font-size="13px" font-family="-apple-system," fill="#374151">Gewerbeamt + FA</text>
+  {/* Zeile 3 */}
   <rect x="0" y="106" width="560" height="38" fill="#f9fafb"/>
   <line x1="0" y1="144" x2="560" y2="144" stroke="#e5e7eb"/>
-  <text x="10" y="129" class="td">Buchführung</text>
-  <text x="310" y="129" class="neutral">immer EÜR</text>
-  <text x="450" y="129" class="neutral">EÜR oder Bilanz</text>
-  <!-- Zeile 4 -->
+  <text x="10" y="129" font-size="13px" font-family="-apple-system," fill="#374151">Buchführung</text>
+  <text x="310" y="129" font-size="13px" font-family="-apple-system," fill="#374151">immer EÜR</text>
+  <text x="450" y="129" font-size="13px" font-family="-apple-system," fill="#374151">EÜR oder Bilanz</text>
+  {/* Zeile 4 */}
   <rect x="0" y="144" width="560" height="38" fill="#ffffff"/>
   <line x1="0" y1="182" x2="560" y2="182" stroke="#e5e7eb"/>
-  <text x="10" y="167" class="td">IHK-Pflichtmitglied</text>
-  <text x="330" y="167" class="yes">✓ nein</text>
-  <text x="460" y="167" class="no">✗ ja</text>
-  <!-- Zeile 5 -->
+  <text x="10" y="167" font-size="13px" font-family="-apple-system," fill="#374151">IHK-Pflichtmitglied</text>
+  <text x="330" y="167" font-weight="600" font-size="13px" font-family="-apple-system, system-ui, sans-serif" fill="#059669">✓ nein</text>
+  <text x="460" y="167" font-weight="600" font-size="13px" font-family="-apple-system, system-ui, sans-serif" fill="#dc2626">✗ ja</text>
+  {/* Zeile 5 */}
   <rect x="0" y="182" width="560" height="38" fill="#f9fafb"/>
-  <text x="10" y="205" class="td">Gewerbesteuer-Anrechnung</text>
-  <text x="310" y="205" class="neutral">entfällt</text>
-  <text x="450" y="205" class="neutral">§ 35 EStG möglich</text>
+  <text x="10" y="205" font-size="13px" font-family="-apple-system," fill="#374151">Gewerbesteuer-Anrechnung</text>
+  <text x="310" y="205" font-size="13px" font-family="-apple-system," fill="#374151">entfällt</text>
+  <text x="450" y="205" font-size="13px" font-family="-apple-system," fill="#374151">§ 35 EStG möglich</text>
 </svg>
 
 ## Anmeldung: Was du wohin meldest
