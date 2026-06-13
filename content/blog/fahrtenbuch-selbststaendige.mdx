@@ -30,24 +30,18 @@ Beim Fahrtenbuch wird der tatsächliche Privatanteil berechnet. Du erfasst alle 
 
 ## Fahrtenbuch vs. 1%-Regelung: Kostenvergleich am Beispiel
 
-<svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vergleich: 1%-Regelung ergibt 3.600 Euro jährlich steuerpflichtig, Fahrtenbuch bei 20% Privatanteil ergibt 1.600 Euro jährlich steuerpflichtig. Beispiel: Listenpreis 30.000 Euro, Jahreskosten 8.000 Euro." style="max-width:600px;width:100%;height:auto;margin:1.5em 0">
-  <style>
-    .cl { font: 13px -apple-system, system-ui, sans-serif; fill: #374151; }
-    .cv { font: 600 14px -apple-system, system-ui, sans-serif; fill: #374151; }
-    .ct { font: 600 15px -apple-system, system-ui, sans-serif; fill: #111827; }
-    .cs { font: 12px -apple-system, system-ui, sans-serif; fill: #6b7280; }
-  </style>
-  <text x="0" y="18" class="ct">Steuerpflichtiger Privatanteil pro Jahr (Listenpreis 30.000 €, 20 % privat)</text>
-  <text x="0" y="56" class="cl">1%-Regelung</text>
+<svg viewBox="0 0 600 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vergleich: 1%-Regelung ergibt 3.600 Euro jährlich steuerpflichtig, Fahrtenbuch bei 20% Privatanteil ergibt 1.600 Euro jährlich steuerpflichtig. Beispiel: Listenpreis 30.000 Euro, Jahreskosten 8.000 Euro." style={{maxWidth:600,width:'100%',height:'auto',margin:'1.5em 0'}}>
+  <text x="0" y="18" fontSize={15} fontWeight={600} fontFamily="-apple-system, system-ui, sans-serif" fill="#111827">Steuerpflichtiger Privatanteil pro Jahr (Listenpreis 30.000 €, 20 % privat)</text>
+  <text x="0" y="56" fontSize={13} fontFamily="-apple-system, system-ui, sans-serif" fill="#374151">1%-Regelung</text>
   <rect x="140" y="40" width="350" height="26" rx="4" fill="#95B8E8"/>
-  <text x="498" y="57" class="cv">3.600 €</text>
-  <text x="0" y="102" class="cl">Fahrtenbuch</text>
+  <text x="498" y="57" fontSize={14} fontWeight={600} fontFamily="-apple-system, system-ui, sans-serif" fill="#374151">3.600 €</text>
+  <text x="0" y="102" fontSize={13} fontFamily="-apple-system, system-ui, sans-serif" fill="#374151">Fahrtenbuch</text>
   <rect x="140" y="86" width="156" height="26" rx="4" fill="#4D719A"/>
-  <text x="304" y="102" class="cv">1.600 €</text>
-  <line x1="0" y1="126" x2="600" y2="126" stroke="#e5e7eb" stroke-width="1"/>
-  <text x="0" y="148" class="cs">Ersparnis durch Fahrtenbuch im Beispiel: 2.000 € / Jahr (vor Einkommensteuer)</text>
-  <text x="0" y="166" class="cs">Jahreskosten gesamt (Steuer, Versicherung, Sprit, Wartung): 8.000 €</text>
-  <text x="0" y="184" class="cs">Tatsächliche Steuerersparnis abhängig vom persönlichen Einkommensteuersatz</text>
+  <text x="304" y="102" fontSize={14} fontWeight={600} fontFamily="-apple-system, system-ui, sans-serif" fill="#374151">1.600 €</text>
+  <line x1="0" y1="126" x2="600" y2="126" stroke="#e5e7eb" strokeWidth="1"/>
+  <text x="0" y="148" fontSize={12} fontFamily="-apple-system, system-ui, sans-serif" fill="#6b7280">Ersparnis durch Fahrtenbuch im Beispiel: 2.000 € / Jahr (vor Einkommensteuer)</text>
+  <text x="0" y="166" fontSize={12} fontFamily="-apple-system, system-ui, sans-serif" fill="#6b7280">Jahreskosten gesamt (Steuer, Versicherung, Sprit, Wartung): 8.000 €</text>
+  <text x="0" y="184" fontSize={12} fontFamily="-apple-system, system-ui, sans-serif" fill="#6b7280">Tatsächliche Steuerersparnis abhängig vom persönlichen Einkommensteuersatz</text>
 </svg>
 
 ## Wann lohnt sich das Fahrtenbuch?
